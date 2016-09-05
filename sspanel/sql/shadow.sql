@@ -1,0 +1,393 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Aug 19, 2016 at 11:34 AM
+-- Server version: 10.0.26-MariaDB
+-- PHP Version: 5.6.24
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `shadow`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `danmu`
+--
+
+CREATE TABLE `danmu` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `user_phone` varchar(20) CHARACTER SET gbk NOT NULL,
+  `danmu_content` varchar(128) CHARACTER SET gbk NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `danmu`
+--
+
+INSERT INTO `danmu` (`id`, `user_phone`, `danmu_content`, `time`) VALUES
+(1, '17863963884', '你好', '2016-07-27 18:31:50'),
+(2, '17863963884', '你好。', '2016-07-27 18:31:51'),
+(3, '17863963884', '你好吗？发一条弹幕测试。', '2016-07-27 18:34:00'),
+(4, '17863963884', '模特是山东省', '2016-07-27 18:36:28'),
+(5, '17863963884', '模特是山东省。', '2016-07-27 18:36:29'),
+(6, '17863963884', '为什么第一次就两条啊', '2016-07-27 18:36:52'),
+(7, '17863963884', '为什么第一次就两条啊！', '2016-07-27 18:36:52'),
+(8, '17863963884', '第二次你他妈也是两条', '2016-07-27 18:37:04'),
+(9, '17863963884', '第二次你他妈也是两条。', '2016-07-27 18:37:04'),
+(10, '17863963884', '两条', '2016-07-27 18:38:45'),
+(11, '17863963884', '两条。', '2016-07-27 18:38:45'),
+(12, '17863963884', '两边', '2016-07-27 18:44:26'),
+(13, '17863963884', '两边。', '2016-07-27 18:44:26'),
+(14, '17863963884', '你好', '2016-07-27 18:51:36'),
+(15, '17863963884', '你好。', '2016-07-27 18:51:37'),
+(16, '17863963884', '与瑞', '2016-07-27 18:57:20'),
+(17, '17863963884', '与瑞。', '2016-07-27 18:57:22'),
+(18, '17863963884', '。', '2016-07-27 19:17:23'),
+(19, '17863963884', '谷神家园。', '2016-07-27 19:17:35'),
+(20, '17863963884', '。', '2016-07-27 19:17:46'),
+(21, '17863963884', '。', '2016-07-27 19:17:57'),
+(22, '17863963884', '？', '2016-07-27 19:18:07'),
+(23, '17863963884', '。', '2016-07-27 19:25:22'),
+(24, '17863963884', '', '2016-07-27 19:30:20'),
+(25, '17863963884', '', '2016-07-27 19:30:21'),
+(26, '17863963884', '', '2016-07-27 19:30:30'),
+(27, '17863963884', '', '2016-07-27 19:30:31'),
+(28, '17863963884', '', '2016-07-27 19:30:38'),
+(29, '17863963884', '', '2016-07-27 19:30:39'),
+(30, '17863963884', '我去上学了', '2016-07-27 19:32:56'),
+(31, '17863963884', '我去上学了我去上学了。', '2016-07-27 19:32:57'),
+(32, '17863963884', '我去上学了我去上学了。', '2016-07-27 19:35:09'),
+(33, '17863963884', '你好你好。', '2016-07-27 19:35:27'),
+(34, '17863963884', '上学了上学了。', '2016-07-27 19:37:20'),
+(35, '17863963884', '放学来上学了。', '2016-07-27 19:41:03'),
+(36, '17863963884', '明天早上上学吗？', '2016-07-27 19:41:19'),
+(37, '17863963884', '天天不上学吗？', '2016-07-27 19:41:30'),
+(38, '17863963884', '小虎队。', '2016-07-27 19:54:40'),
+(39, '17863963884', '变颜色了。', '2016-07-27 20:03:48'),
+(40, '17863963884', '长安汽车。', '2016-07-27 20:19:51'),
+(41, '17863963884', '这个颜色怎么不变？', '2016-07-27 20:20:01'),
+(42, '17863963884', '为什么是白色？', '2016-07-27 20:20:09'),
+(43, '17863963884', '为什么颜色不变了？', '2016-07-27 20:25:53'),
+(44, '17863963884', '蓝色。', '2016-07-27 20:28:13'),
+(45, '17863963884', '嘿嘿。', '2016-07-27 20:31:57'),
+(46, '17863963884', '真是黑啊！', '2016-07-27 20:32:10'),
+(47, '17863963884', '嗯。', '2016-07-28 02:55:36'),
+(48, '17863963884', '淡漠呢！', '2016-07-28 02:56:00'),
+(49, '17863963884', '你好。', '2016-07-28 02:56:33'),
+(50, '17863963884', '恶魔回来了。', '2016-07-28 02:56:54'),
+(51, '17863963884', '怎么会这么坏了？', '2016-07-28 03:00:11'),
+(52, '17863963884', '耽误了。', '2016-07-28 03:08:11'),
+(53, '17863963884', '怎么？', '2016-07-28 03:21:32'),
+(54, '17863963884', '你好。', '2016-07-28 06:14:16'),
+(55, '17863963884', '你好。', '2016-07-28 06:21:46'),
+(56, '17863963884', '怎么还是白色？', '2016-07-28 06:21:57'),
+(57, '17863963884', '终于变色了。', '2016-07-28 06:22:04'),
+(58, '17863963884', '又是白色。', '2016-07-28 06:22:11'),
+(59, '17863963884', '忘了，难受了，还不错。', '2016-07-28 06:22:20'),
+(60, '17863963884', '便说。', '2016-07-28 06:28:24'),
+(61, '17863963884', '换个颜色。', '2016-07-28 06:28:33'),
+(62, '17863963884', '换颜色呀！', '2016-07-28 06:28:40'),
+(63, '17863963884', '我操，怎么都是白色？', '2016-07-28 06:28:49'),
+(64, '17863963884', '阿西吧！', '2016-07-28 06:28:57'),
+(65, '17863963884', '换个颜色。', '2016-07-28 06:31:08'),
+(66, '17863963884', '换换颜色。', '2016-07-28 06:31:22'),
+(67, '17863963884', '这还差不多嘛。', '2016-07-28 06:31:33'),
+(68, '17863963884', '这里是山东省德州市。', '2016-07-28 06:31:54'),
+(69, '17863963884', '为什么科大讯飞的语音识别技术是这么准为什么？就连我随便乱说的话他都能够，嗯出来的。', '2016-07-28 06:32:17'),
+(70, '17863963884', '沈东。', '2016-07-28 10:28:12'),
+(71, '17863963884', '你说话的人。', '2016-07-28 11:16:32'),
+(72, '17863963884', '一。', '2016-07-28 11:16:53'),
+(73, '17863963884', '带我上青岛。', '2016-07-28 11:17:24'),
+(74, '17863963884', '高德地图继续为您导航。', '2016-07-28 14:50:22'),
+(75, '17863963884', '。', '2016-07-29 02:10:49'),
+(76, '17863963884', '可看不见，哎。', '2016-07-29 10:49:32'),
+(77, '17863963884', '许爸，爸，你好。', '2016-07-29 10:49:53'),
+(78, '17863963884', '我。', '2016-07-29 10:54:11'),
+(79, '17863963884', '嗯。', '2016-07-29 23:35:02'),
+(80, '17863963884', '。', '2016-08-01 12:26:42'),
+(81, '17863963884', '你好。', '2016-08-03 00:58:07'),
+(82, '商家17854259542', '把。', '2016-08-05 01:43:16'),
+(83, '商家17854259542', '。', '2016-08-05 15:54:40'),
+(84, '商家17854259542', '你好。', '2016-08-06 01:14:42'),
+(85, '17854259542', '你好。', '2016-08-06 01:16:42'),
+(86, '商家17854259542', '人都能生长。', '2016-08-06 09:55:18'),
+(87, '商家13658667478', '免疫力低下。', '2016-08-06 14:45:31'),
+(88, '商家13658667478', '一，这也太应该是长得这么快吧！', '2016-08-06 14:46:07'),
+(89, '17854259542', '你好。', '2016-08-11 07:20:57'),
+(90, '17854259542', '你好。', '2016-08-11 07:38:41'),
+(91, 'xbw@mvp.com', '你。', '2016-08-17 13:56:50'),
+(92, 'xbw@mvp.com', '你们家？', '2016-08-17 14:20:10'),
+(93, 'xbw@mvp.com', '。', '2016-08-18 15:20:06'),
+(94, 'xbw@mvp.com', '嗯。', '2016-08-18 15:20:55'),
+(95, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 07:50:36'),
+(96, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 07:59:28'),
+(97, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 08:00:22'),
+(98, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 08:01:23'),
+(99, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 08:01:53'),
+(100, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 08:02:37'),
+(101, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 08:16:15'),
+(102, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 08:16:19'),
+(103, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 08:16:22'),
+(104, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 08:19:07'),
+(105, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 08:19:08'),
+(106, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 08:20:36'),
+(107, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 08:22:34'),
+(108, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 09:10:19'),
+(109, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 09:10:26'),
+(110, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 09:10:38'),
+(111, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 09:41:18'),
+(112, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 12:11:28'),
+(113, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 12:26:57'),
+(114, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 13:00:42'),
+(115, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 13:16:09'),
+(116, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 13:38:51'),
+(117, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 13:46:51'),
+(118, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 13:52:43'),
+(119, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 13:58:04'),
+(120, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 14:01:31'),
+(121, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 14:19:37'),
+(122, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 14:50:17'),
+(123, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 14:52:46'),
+(124, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 14:53:59'),
+(125, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 14:56:28'),
+(126, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 14:58:26'),
+(127, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 15:02:35'),
+(128, 'xbw@mvp.com', '下线啦！！！', '2016-08-19 15:08:11'),
+(129, 'xbw@mvp.com', '上线啦！！！', '2016-08-19 15:08:40'),
+(130, '11', '22', '2016-08-19 15:24:47'),
+(131, '11', '22', '2016-08-19 15:25:22'),
+(132, '11', '22', '2016-08-19 15:26:37'),
+(133, '11', '22', '2016-08-19 15:26:38'),
+(134, '11', '22', '2016-08-19 15:27:12'),
+(135, 'xbw@mvp.com', '区', '2016-08-19 15:31:56');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fangke`
+--
+
+CREATE TABLE `fangke` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `ip` varchar(256) CHARACTER SET gbk NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `invite_code`
+--
+
+CREATE TABLE `invite_code` (
+  `id` int(32) NOT NULL,
+  `code` varchar(128) NOT NULL,
+  `user` int(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ss_node`
+--
+
+CREATE TABLE `ss_node` (
+  `id` int(11) NOT NULL,
+  `node_name` varchar(128) NOT NULL,
+  `node_type` int(3) NOT NULL,
+  `node_server` varchar(128) NOT NULL,
+  `node_method` varchar(64) NOT NULL,
+  `node_info` varchar(128) NOT NULL,
+  `node_status` varchar(128) NOT NULL,
+  `node_order` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ss_node`
+--
+
+INSERT INTO `ss_node` (`id`, `node_name`, `node_type`, `node_server`, `node_method`, `node_info`, `node_status`, `node_order`) VALUES
+(1, '第一个节点', 0, '45.78.32.28', 'aes-256-cfb', 'node描述', '可用', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ss_reset_pwd`
+--
+
+CREATE TABLE `ss_reset_pwd` (
+  `id` int(11) NOT NULL,
+  `init_time` int(11) NOT NULL,
+  `expire_time` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `uni_char` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ss_reset_pwd`
+--
+
+INSERT INTO `ss_reset_pwd` (`id`, `init_time`, `expire_time`, `user_id`, `uni_char`) VALUES
+(0, 1424448190, 1424534590, 1, '2MzU5ODFkYzM4MmVkZTM2ZTdjNGNhNDI');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ss_user_admin`
+--
+
+CREATE TABLE `ss_user_admin` (
+  `id` int(11) NOT NULL,
+  `uid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ss_user_admin`
+--
+
+INSERT INTO `ss_user_admin` (`id`, `uid`) VALUES
+(1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `uid` int(11) NOT NULL,
+  `user_name` varchar(128) CHARACTER SET utf8mb4 NOT NULL,
+  `email` varchar(32) NOT NULL,
+  `pass` varchar(64) NOT NULL,
+  `passwd` varchar(16) NOT NULL,
+  `t` int(11) NOT NULL DEFAULT '0',
+  `u` bigint(20) NOT NULL,
+  `d` bigint(20) NOT NULL,
+  `plan` varchar(2) CHARACTER SET utf8mb4 NOT NULL,
+  `transfer_enable` bigint(20) NOT NULL,
+  `port` int(11) NOT NULL,
+  `switch` tinyint(4) NOT NULL DEFAULT '1',
+  `enable` tinyint(4) NOT NULL DEFAULT '1',
+  `type` tinyint(4) NOT NULL DEFAULT '1',
+  `last_get_gift_time` int(11) NOT NULL DEFAULT '0',
+  `last_check_in_time` int(11) NOT NULL DEFAULT '0',
+  `last_rest_pass_time` int(11) NOT NULL DEFAULT '0',
+  `reg_date` datetime NOT NULL,
+  `invite_num` int(8) NOT NULL,
+  `money` decimal(12,2) NOT NULL,
+  `ref_by` int(11) NOT NULL DEFAULT '0',
+  `ssbase` varchar(256) CHARACTER SET gbk NOT NULL,
+  `user_token` varchar(256) CHARACTER SET gbk NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`uid`, `user_name`, `email`, `pass`, `passwd`, `t`, `u`, `d`, `plan`, `transfer_enable`, `port`, `switch`, `enable`, `type`, `last_get_gift_time`, `last_check_in_time`, `last_rest_pass_time`, `reg_date`, `invite_num`, `money`, `ref_by`, `ssbase`, `user_token`) VALUES
+(1, 'MVP', 'xbw@mvp.com', 'a24109e4a43d9574952668f20a4fa5d9', 'xbw12138', 1471620401, 22296228, 907799605, 'B', 53847523328, 10000, 1, 1, 7, 0, 1471512614, 0, '1997-01-27 00:00:00', 0, '1.20', 0, '', 'e1f80ebc9c6128314254afbac9299015e712cf4e'),
+(3, 'xbw12138', '110@qq.com', '641c0cf81f38d7f3d6ff8012d45d3fa5', 'w147978', 0, 0, 0, 'A', 53799288832, 10005, 1, 1, 1, 0, 1471320523, 0, '2016-08-07 06:05:47', 1, '0.00', 1, '', ''),
+(5, 'Dead_Rabbit', '1054222912@qq.com', '023addedef52f136d44dcff1f8130acb', 's3hD2tRH', 0, 0, 0, 'A', 53739520000, 10010, 1, 1, 1, 0, 1471335900, 0, '2016-08-16 04:24:21', 1, '0.00', 0, '', ''),
+(6, 'lzy12138', '120@qq.com', 'a24109e4a43d9574952668f20a4fa5d9', 'Ki3qZZ0S', 0, 0, 0, 'A', 53687091200, 10015, 1, 1, 1, 0, 0, 0, '2016-08-18 08:01:26', 1, '0.00', 0, '', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `danmu`
+--
+ALTER TABLE `danmu`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `fangke`
+--
+ALTER TABLE `fangke`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `invite_code`
+--
+ALTER TABLE `invite_code`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ss_node`
+--
+ALTER TABLE `ss_node`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ss_reset_pwd`
+--
+ALTER TABLE `ss_reset_pwd`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ss_user_admin`
+--
+ALTER TABLE `ss_user_admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`uid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `danmu`
+--
+ALTER TABLE `danmu`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+--
+-- AUTO_INCREMENT for table `fangke`
+--
+ALTER TABLE `fangke`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `invite_code`
+--
+ALTER TABLE `invite_code`
+  MODIFY `id` int(32) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3646;
+--
+-- AUTO_INCREMENT for table `ss_node`
+--
+ALTER TABLE `ss_node`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `ss_reset_pwd`
+--
+ALTER TABLE `ss_reset_pwd`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `ss_user_admin`
+--
+ALTER TABLE `ss_user_admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
