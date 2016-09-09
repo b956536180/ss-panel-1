@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.3
--- https://www.phpmyadmin.net/
+-- version 4.5.2
+-- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 19, 2016 at 11:34 AM
--- Server version: 10.0.26-MariaDB
--- PHP Version: 5.6.24
+-- Generation Time: Sep 09, 2016 at 02:38 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,10 +27,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `danmu` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `user_phone` varchar(20) CHARACTER SET gbk NOT NULL,
-  `danmu_content` varchar(128) CHARACTER SET gbk NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+`id` int(10) UNSIGNED NOT NULL,
+`user_phone` varchar(20) CHARACTER SET gbk NOT NULL,
+`danmu_content` varchar(128) CHARACTER SET gbk NOT NULL,
+`time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -172,7 +172,24 @@ INSERT INTO `danmu` (`id`, `user_phone`, `danmu_content`, `time`) VALUES
 (132, '11', '22', '2016-08-19 15:26:37'),
 (133, '11', '22', '2016-08-19 15:26:38'),
 (134, '11', '22', '2016-08-19 15:27:12'),
-(135, 'xbw@mvp.com', '区', '2016-08-19 15:31:56');
+(135, 'xbw@mvp.com', '区', '2016-08-19 15:31:56'),
+(136, 'xbw@mvp.com', '来来来', '2016-09-01 17:32:04'),
+(137, 'xbw@mvp.com', '弹幕', '2016-09-01 17:33:39'),
+(138, 'xbw@mvp.com', '又一次', '2016-09-01 18:11:49'),
+(139, 'xbw@mvp.com', '炸了', '2016-09-01 18:12:23'),
+(140, 'xbw@mvp.com', '可以吗？', '2016-09-01 18:13:47'),
+(141, 'xbw@mvp.com', '项目刚起来。', '2016-09-01 18:14:08'),
+(142, 'xbw@mvp.com', '今天不用很多。', '2016-09-01 18:14:17'),
+(143, 'xbw@mvp.com', '怎么多了好卡？', '2016-09-01 18:14:40'),
+(144, 'xbw@mvp.com', 'iiiiiiiiiiii', '2016-09-01 18:17:20'),
+(145, 'xbw@mvp.com', '。', '2016-09-01 18:19:15'),
+(146, 'xbw@mvp.com', 'hgggg', '2016-09-02 09:14:29'),
+(147, 'xbw@mvp.com', 'gggg', '2016-09-02 09:16:39'),
+(148, 'xbw@mvp.com', 'gggg', '2016-09-02 15:04:12'),
+(149, 'xbw@mvp.com', '还能用不', '2016-09-02 16:45:37'),
+(150, 'xbw@mvp.com', '一起youtube', '2016-09-03 08:35:38'),
+(151, 'xbw@mvp.com', '不错', '2016-09-03 08:35:44'),
+(152, 'xbw@mvp.com', 'vvvv', '2016-09-09 05:28:13');
 
 -- --------------------------------------------------------
 
@@ -181,9 +198,9 @@ INSERT INTO `danmu` (`id`, `user_phone`, `danmu_content`, `time`) VALUES
 --
 
 CREATE TABLE `fangke` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `ip` varchar(256) CHARACTER SET gbk NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+`id` int(10) UNSIGNED NOT NULL,
+`ip` varchar(256) CHARACTER SET gbk NOT NULL,
+`time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -193,9 +210,9 @@ CREATE TABLE `fangke` (
 --
 
 CREATE TABLE `invite_code` (
-  `id` int(32) NOT NULL,
-  `code` varchar(128) NOT NULL,
-  `user` int(32) NOT NULL
+`id` int(32) NOT NULL,
+`code` varchar(128) NOT NULL,
+`user` int(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -205,14 +222,14 @@ CREATE TABLE `invite_code` (
 --
 
 CREATE TABLE `ss_node` (
-  `id` int(11) NOT NULL,
-  `node_name` varchar(128) NOT NULL,
-  `node_type` int(3) NOT NULL,
-  `node_server` varchar(128) NOT NULL,
-  `node_method` varchar(64) NOT NULL,
-  `node_info` varchar(128) NOT NULL,
-  `node_status` varchar(128) NOT NULL,
-  `node_order` int(3) NOT NULL
+`id` int(11) NOT NULL,
+`node_name` varchar(128) NOT NULL,
+`node_type` int(3) NOT NULL,
+`node_server` varchar(128) NOT NULL,
+`node_method` varchar(64) NOT NULL,
+`node_info` varchar(128) NOT NULL,
+`node_status` varchar(128) NOT NULL,
+`node_order` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -229,11 +246,11 @@ INSERT INTO `ss_node` (`id`, `node_name`, `node_type`, `node_server`, `node_meth
 --
 
 CREATE TABLE `ss_reset_pwd` (
-  `id` int(11) NOT NULL,
-  `init_time` int(11) NOT NULL,
-  `expire_time` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `uni_char` varchar(32) NOT NULL
+`id` int(11) NOT NULL,
+`init_time` int(11) NOT NULL,
+`expire_time` int(11) NOT NULL,
+`user_id` int(11) NOT NULL,
+`uni_char` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -250,8 +267,8 @@ INSERT INTO `ss_reset_pwd` (`id`, `init_time`, `expire_time`, `user_id`, `uni_ch
 --
 
 CREATE TABLE `ss_user_admin` (
-  `id` int(11) NOT NULL,
-  `uid` int(11) NOT NULL
+`id` int(11) NOT NULL,
+`uid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -268,29 +285,29 @@ INSERT INTO `ss_user_admin` (`id`, `uid`) VALUES
 --
 
 CREATE TABLE `user` (
-  `uid` int(11) NOT NULL,
-  `user_name` varchar(128) CHARACTER SET utf8mb4 NOT NULL,
-  `email` varchar(32) NOT NULL,
-  `pass` varchar(64) NOT NULL,
-  `passwd` varchar(16) NOT NULL,
-  `t` int(11) NOT NULL DEFAULT '0',
-  `u` bigint(20) NOT NULL,
-  `d` bigint(20) NOT NULL,
-  `plan` varchar(2) CHARACTER SET utf8mb4 NOT NULL,
-  `transfer_enable` bigint(20) NOT NULL,
-  `port` int(11) NOT NULL,
-  `switch` tinyint(4) NOT NULL DEFAULT '1',
-  `enable` tinyint(4) NOT NULL DEFAULT '1',
-  `type` tinyint(4) NOT NULL DEFAULT '1',
-  `last_get_gift_time` int(11) NOT NULL DEFAULT '0',
-  `last_check_in_time` int(11) NOT NULL DEFAULT '0',
-  `last_rest_pass_time` int(11) NOT NULL DEFAULT '0',
-  `reg_date` datetime NOT NULL,
-  `invite_num` int(8) NOT NULL,
-  `money` decimal(12,2) NOT NULL,
-  `ref_by` int(11) NOT NULL DEFAULT '0',
-  `ssbase` varchar(256) CHARACTER SET gbk NOT NULL,
-  `user_token` varchar(256) CHARACTER SET gbk NOT NULL
+`uid` int(11) NOT NULL,
+`user_name` varchar(128) CHARACTER SET utf8mb4 NOT NULL,
+`email` varchar(32) NOT NULL,
+`pass` varchar(64) NOT NULL,
+`passwd` varchar(16) NOT NULL,
+`t` int(11) NOT NULL DEFAULT '0',
+`u` bigint(20) NOT NULL,
+`d` bigint(20) NOT NULL,
+`plan` varchar(2) CHARACTER SET utf8mb4 NOT NULL,
+`transfer_enable` bigint(20) NOT NULL,
+`port` int(11) NOT NULL,
+`switch` tinyint(4) NOT NULL DEFAULT '1',
+`enable` tinyint(4) NOT NULL DEFAULT '1',
+`type` tinyint(4) NOT NULL DEFAULT '1',
+`last_get_gift_time` int(11) NOT NULL DEFAULT '0',
+`last_check_in_time` int(11) NOT NULL DEFAULT '0',
+`last_rest_pass_time` int(11) NOT NULL DEFAULT '0',
+`reg_date` datetime NOT NULL,
+`invite_num` int(8) NOT NULL,
+`money` decimal(12,2) NOT NULL,
+`ref_by` int(11) NOT NULL DEFAULT '0',
+`ssbase` varchar(256) CHARACTER SET gbk NOT NULL,
+`user_token` varchar(256) CHARACTER SET gbk NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -298,10 +315,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`uid`, `user_name`, `email`, `pass`, `passwd`, `t`, `u`, `d`, `plan`, `transfer_enable`, `port`, `switch`, `enable`, `type`, `last_get_gift_time`, `last_check_in_time`, `last_rest_pass_time`, `reg_date`, `invite_num`, `money`, `ref_by`, `ssbase`, `user_token`) VALUES
-(1, 'MVP', 'xbw@mvp.com', 'a24109e4a43d9574952668f20a4fa5d9', 'xbw12138', 1471620401, 22296228, 907799605, 'B', 53847523328, 10000, 1, 1, 7, 0, 1471512614, 0, '1997-01-27 00:00:00', 0, '1.20', 0, '', 'e1f80ebc9c6128314254afbac9299015e712cf4e'),
-(3, 'xbw12138', '110@qq.com', '641c0cf81f38d7f3d6ff8012d45d3fa5', 'w147978', 0, 0, 0, 'A', 53799288832, 10005, 1, 1, 1, 0, 1471320523, 0, '2016-08-07 06:05:47', 1, '0.00', 1, '', ''),
-(5, 'Dead_Rabbit', '1054222912@qq.com', '023addedef52f136d44dcff1f8130acb', 's3hD2tRH', 0, 0, 0, 'A', 53739520000, 10010, 1, 1, 1, 0, 1471335900, 0, '2016-08-16 04:24:21', 1, '0.00', 0, '', ''),
-(6, 'lzy12138', '120@qq.com', 'a24109e4a43d9574952668f20a4fa5d9', 'Ki3qZZ0S', 0, 0, 0, 'A', 53687091200, 10015, 1, 1, 1, 0, 0, 0, '2016-08-18 08:01:26', 1, '0.00', 0, '', '');
+(1, 'MVP', 'xbw@mvp.com', 'a24109e4a43d9574952668f20a4fa5d9', 'xbw12138', 1473424696, 50350225, 2433305295, 'B', 53847523328, 10000, 1, 1, 7, 0, 1471512614, 0, '1997-01-27 00:00:00', 0, '1.20', 1, '', 'e1f80ebc9c6128314254afbac9299015e712cf4e'),
+(3, 'xbw12138', '110@qq.com', '641c0cf81f38d7f3d6ff8012d45d3fa5', 'w147978', 1473382523, 8580, 0, 'A', 53799288832, 10004, 1, 1, 1, 0, 1471320523, 0, '2016-08-07 06:05:47', 1, '0.00', 1, '', ''),
+(5, 'Dead_Rabbit', '1054222912@qq.com', '023addedef52f136d44dcff1f8130acb', 's3hD2tRH', 1473382523, 8580, 0, 'A', 53739520000, 10009, 1, 1, 1, 0, 1471335900, 0, '2016-08-16 04:24:21', 1, '0.00', 1, '', ''),
+(6, 'lzy12138', '120@qq.com', 'a24109e4a43d9574952668f20a4fa5d9', '123456', 1473382523, 8580, 0, 'A', 53687091200, 10015, 1, 1, 1, 0, 0, 0, '2016-08-18 08:01:26', 1, '0.00', 1, '', ''),
+(7, 'AudienL', '591928179@qq.com', '7ba34a7c9344df2acabdb0146b9e15e3', '1iP6vwSR', 1473382523, 1574718, 87081866, 'A', 53855911936, 10017, 1, 1, 1, 0, 1473134355, 0, '2016-09-03 15:16:13', 0, '0.00', 7, '', '');
 
 --
 -- Indexes for dumped tables
@@ -311,43 +329,43 @@ INSERT INTO `user` (`uid`, `user_name`, `email`, `pass`, `passwd`, `t`, `u`, `d`
 -- Indexes for table `danmu`
 --
 ALTER TABLE `danmu`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `fangke`
 --
 ALTER TABLE `fangke`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `invite_code`
 --
 ALTER TABLE `invite_code`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `ss_node`
 --
 ALTER TABLE `ss_node`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `ss_reset_pwd`
 --
 ALTER TABLE `ss_reset_pwd`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `ss_user_admin`
 --
 ALTER TABLE `ss_user_admin`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`uid`);
+ADD PRIMARY KEY (`uid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -357,37 +375,37 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `danmu`
 --
 ALTER TABLE `danmu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
 --
 -- AUTO_INCREMENT for table `fangke`
 --
 ALTER TABLE `fangke`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `invite_code`
 --
 ALTER TABLE `invite_code`
-  MODIFY `id` int(32) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3646;
+MODIFY `id` int(32) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `ss_node`
 --
 ALTER TABLE `ss_node`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `ss_reset_pwd`
 --
 ALTER TABLE `ss_reset_pwd`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `ss_user_admin`
 --
 ALTER TABLE `ss_user_admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

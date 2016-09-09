@@ -1,7 +1,3 @@
-# ss-panel
+# Tutorial
 
-This is my ss-panel repository.
-
-This project base on ss-panel
-
-
+This is my tutorial repository.
