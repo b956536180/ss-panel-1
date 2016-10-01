@@ -8,31 +8,19 @@ $c = new \Ss\User\Invite();
     <div class="container">
         <br><br>
         <div class="row center">
-            <h5>服务器代购</h5>
-            <h5>BandWaGon服务器代购</h5>
-        </div>
-    </div>
-</div>
+            <h5>android 代理</h5>
+            <br><br>
+            <img src="asset/img/a1.png" width="360" height="640">
+            <img src="asset/img/a2.png" width="360" height="640">
+            <br>
+            <h5>下载地址回复可见</h5>
+            <br>
+            <h5>其他设备下载地址 <a href="http://shadowsocks.org/en/download/clients.html">shadowsocks</a></h5>
+            <br>
 
-
-<div class="container">
-    <div class="section"> 
-        <!--   Icon Section   -->
-        <div class="row">
-            <div class="row marketing">
-            	<center>
-                    <a href="https://bandwagonhost.com"><img src="asset/img/logo.png"></img></a>
-                    <a href="https://bandwagonhost.com/vps-hosting.php"><img src="asset/img/banner1.jpg" alt="Self-managed VPS hosting"/></a>
-                    <p>点我QQ详谈</p>
-                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1076351865&site=qq&menu=yes"><img src="asset/img/qq.png" alt="点我QQ详谈"/></a>
-
-
-
-
-<br><br><br>
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="222" data-title="vps服务器" data-url="http://ecfun.cc:81/vps.php"></div>
+<div class="ds-thread" data-thread-key="321" data-title="软件" data-url="http://ecfun.cc:81/mvp.php"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -48,12 +36,12 @@ var duoshuoQuery = {short_name:"mvp"};
 </script>
 <!-- 多说公共JS代码 end -->
 
-                </center>
-		
-	    </div>
         </div>
     </div>
-    <br>  
 </div>
+
+
+
+
 <?php  include_once 'ana.php';
 include_once 'footer.php';?>

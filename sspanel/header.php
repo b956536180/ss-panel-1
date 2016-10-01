@@ -14,22 +14,26 @@
     <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><?php echo $site_name; ?></a>
         <ul class="right hide-on-med-and-down">
 <li><a href="index.php">Home</a></li>
-<li><a href="http://shadowsocks.org/en/download/clients.html">Download</a></li>
-<li><a href="user">User Center</a></li>
+<li><a href="user">User</a></li>
 <li><a href="http://xbwcc.com.cn" target="_blank">ECFUN</a></li>
 <li><a href="http://blog.csdn.net/xbw12138" target="_blank">CSDN</a></li>
 <li><a href="cbi.php" target="_blank">CSDN C币</a></li>
 <li><a href="vps.php" target="_blank">服务器</a></li>
+<li><a href="talk.php" target="_blank">留言</a></li>
+<li><a href="mvp.php" target="_blank">本站app</a></li>
+<li><a href="csdn.php" target="_blank">CC</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
 <li><a href="index.php">Home</a></li>
-<li><a href="http://shadowsocks.org/en/download/clients.html">Download</a></li>
-<li><a href="user">User Center</a></li>
+<li><a href="user">User</a></li>
 <li><a href="http://xbwcc.com.cn" target="_blank">ECFUN</a></li>
 <li><a href="http://blog.csdn.net/xbw12138" target="_blank">CSDN</a></li>
 <li><a href="cbi.php" target="_blank">CSDN C币</a></li>
 <li><a href="vps.php" target="_blank">服务器</a></li>
+<li><a href="talk.php" target="_blank">留言</a></li>
+<li><a href="mvp.php" target="_blank">本站app</a></li>
+<li><a href="csdn.php" target="_blank">CC</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

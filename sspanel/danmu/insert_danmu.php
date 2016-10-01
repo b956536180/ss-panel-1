@@ -12,7 +12,7 @@ if (isset($_POST['user_phone'])&&isset($_POST['danmu_content'])&&isset($_POST['o
         $result = "INSERT INTO danmu(user_phone,danmu_content) VALUES('$user_phone','$danmu_content')";
 	mysql_query($result);
         if ($result) {
-		$url="http://v.ecfun.cc/danmu/danmu.php?title=".$user_phone."&content=".$danmu_content;
+		$url="http://ecfun.cc:81/danmu/danmu.php?title=".$user_phone."&content=".$danmu_content;
 		access_url($url);
         $response["success"] = 1;
         $response["message"] = "YES";
@@ -23,7 +23,7 @@ if (isset($_POST['user_phone'])&&isset($_POST['danmu_content'])&&isset($_POST['o
         echo json_encode($response);
     }
 }else if($open=="one"){
-                $url="http://v.ecfun.cc/danmu/danmu.php?title=".$user_phone."&content=".$danmu_content;
+                $url="http://ecfun.cc:81/danmu/danmu.php?title=".$user_phone."&content=".$danmu_content;
 		access_url($url);
                 $response["success"] = 1;
                 $response["message"] = "YES";
