@@ -20,7 +20,7 @@ $c = new \Ss\User\Invite();
 
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="321" data-title="软件" data-url="http://ecfun.cc:81/mvp.php"></div>
+<div class="ds-thread" data-thread-key="321" data-title="软件" data-url="http://ecfun.cc/mvp/mvp.php"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

@@ -63,7 +63,7 @@ a:link,a:visited{
     echo "<center>总共".$haha."篇文章"."</center><BR>";
 ?>
 <div style="left:0;height:120px;line-height:120px;width:100%;position:fixed;bottom:0%;font-size:30px;background:url(http://pic.90sjimg.com/back_pic/00/04/27/49/5b1eee8bdba7b9aefc62fccafe72737c.jpg) no-repeat center;text-align:center">
-<a href="http://ecfun.cc:81/ups.php?id=<?PHP echo $_GET["id"]; ?>&page=<?PHP echo $totalpage; ?>" style="color:#FFF" target="_blank">猛戳此处，提高CSDN访问量～</a>
+<a href="http://ecfun.cc/mvp/ups.php?id=<?PHP echo $_GET["id"]; ?>&page=<?PHP echo $totalpage; ?>" style="color:#FFF" target="_blank">猛戳此处，提高CSDN访问量～</a>
 </div>
 
 <?php  include_once 'ana.php';

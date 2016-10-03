@@ -32,7 +32,7 @@ $c = new \Ss\User\Invite();
                     <br><br><br>
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="111" data-title="csdn币" data-url="http://ecfun.cc:81/cbi.php"></div>
+<div class="ds-thread" data-thread-key="111" data-title="csdn币" data-url="http://ecfun.cc/mvp/cbi.php"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

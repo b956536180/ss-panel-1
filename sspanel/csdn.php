@@ -21,7 +21,7 @@
 <div class="row marketing">
 
 
-<form action="http://ecfun.cc:81/blog.php" method="get">
+<form action="http://ecfun.cc/mvp/blog.php" method="get">
 <p>CSDN ID: <input type="text" name="id" /></p>
 <center>
 <input type="submit" value="确定" /><br>
@@ -35,7 +35,7 @@
 <br><br><br>
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="555" data-title="xbw" data-url="http://ecfun.cc:81/csdn.php"></div>
+<div class="ds-thread" data-thread-key="555" data-title="xbw" data-url="http://ecfun.cc/mvp/csdn.php"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
