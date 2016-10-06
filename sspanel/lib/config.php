@@ -24,7 +24,7 @@ define('DB_TYPE','mysql');
 //define Plan
 //注册用户的初始化流量
 //默认5GiB
-$a_transfer = $togb*50;
+$a_transfer = $togb*20;
 
 //签到设置 签到活的的最低最高流量,单位MB
 $check_min = 1;

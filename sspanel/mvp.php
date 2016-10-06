@@ -10,8 +10,8 @@ $c = new \Ss\User\Invite();
         <div class="row center">
             <h5>android 代理</h5>
             <br><br>
-            <img src="asset/img/a1.png" width="360" height="640">
-            <img src="asset/img/a2.png" width="360" height="640">
+            <img src="http://img.ecfun.cc/a1.png?attname=&e=1475599225&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:81Eb6rGExLxvb9HT24G3FZt8H4E" width="360" height="640">
+            <img src="http://img.ecfun.cc/a2.png?attname=&e=1475599229&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:nvH9TEwVw39uMglxIhL2WcA1QB8" width="360" height="640">
             <br>
             <h5>下载地址回复可见</h5>
             <br>

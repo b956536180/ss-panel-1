@@ -5,7 +5,7 @@ $email = strtolower($email);
 $passwd = $_POST['passwd'];
 $name = $_POST['name'];
 $repasswd = $_POST['repasswd'];
-$agree = $_POST['agree'];
+//$agree = $_POST['agree'];
 $code = $_POST['code'];
 
 $c = new \Ss\User\UserCheck();

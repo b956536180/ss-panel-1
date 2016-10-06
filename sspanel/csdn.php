@@ -3,7 +3,10 @@
     include_once 'header.php';
     $c = new \Ss\User\Invite();
     ?>
-
+<style>
+#sub{width:100px;height:35px;line-height:35px;background:#FD8E26 url(背景图片地址) no-repeat;border:none;}
+#sub:hover{border-bottom:solid 1px #333;}
+</style>
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
 <br><br>
@@ -24,11 +27,12 @@
 <form action="http://ecfun.cc/mvp/blog.php" method="get">
 <p>CSDN ID: <input type="text" name="id" /></p>
 <center>
-<input type="submit" value="确定" /><br>
+<input type="submit" value="确定" id="sub"/><br>
 </center>
 </form>
 <center>
-<img src="asset/img/id.png" />
+<p>CSDN ID 如图</p>
+<img src="http://img.ecfun.cc/id.png?attname=&e=1475599236&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:ObgyqEObtnN0oHC_RgNjPDtERCs" />
 </center>
 
 

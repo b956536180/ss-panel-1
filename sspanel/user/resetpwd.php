@@ -1,7 +1,7 @@
 <?php
 require_once '../lib/config.php';
-$code = $_GET['code'];
-$uid  = $_GET['uid'];
+//$code = $_GET['code'];
+//$uid  = $_GET['uid'];
 ?>
 <!DOCTYPE html>
 <html>

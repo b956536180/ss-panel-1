@@ -22,7 +22,21 @@ require_once '../lib/config.php';
     <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="login-page">
+<style>
+body {
+height: 100%;
+    background-color: #ffffff;
+    background-image: url("../asset/img/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-image: url("../asset/img/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-image: url("../asset/img/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-image: url("../asset/img/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-repeat: repeat,			no-repeat,			no-repeat;
+    background-size: 100px 100px, cover,				cover;
+    background-position: top left,		center center,		bottom center;
+    background-attachment: fixed,			fixed,				fixed;
+}
+</style>
+<body >
 <div class="login-box">
     <div class="login-logo">
         <a href="#"><b><?php echo $site_name;  ?></b></a>

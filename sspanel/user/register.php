@@ -22,7 +22,21 @@ require_once '../lib/config.php';
     <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="register-page">
+<style>
+body {
+height: 100%;
+    background-color: #ffffff;
+    background-image: url("../asset/img/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-image: url("../asset/img/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-image: url("../asset/img/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-image: url("../asset/img/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.0) 5%, rgba(0, 228, 255, 0.0)), url("http://img.ecfun.cc/3c9bcbc0-15dc-4a6f-a81f-5112936b7773.jpg?attname=&e=1475654538&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:LNlkOwJgb1yf69X75O_LBQYWIH4");
+    background-repeat: repeat,			no-repeat,			no-repeat;
+    background-size: 100px 100px, cover,				cover;
+    background-position: top left,		center center,		bottom center;
+    background-attachment: fixed,			fixed,				fixed;
+}
+</style>
+<body >
 <div class="register-box">
     <div class="register-logo">
         <a href="../"><b><?php echo $site_name;  ?></b></a>
@@ -32,15 +46,15 @@ require_once '../lib/config.php';
         <p class="login-box-msg">注册，然后变成一只猫。</p>
 
             <div class="form-group has-feedback">
-                <input type="text" id="name" class="form-control" placeholder="昵称"/>
+                <input type="text" id="name" class="form-control" placeholder="昵称 (7位有效字符)"/>
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="text" id="email" class="form-control" placeholder="邮箱"/>
+                <input type="text" id="email" class="form-control" placeholder="邮箱 (正确的邮箱)"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" id="passwd" class="form-control" placeholder="密码"/>
+                <input type="password" id="passwd" class="form-control" placeholder="密码 (至少8位)"/>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
@@ -48,7 +62,7 @@ require_once '../lib/config.php';
                 <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="text" id="code" class="form-control" placeholder="邀请码"/>
+                <input type="text" id="code" class="form-control" placeholder="邀请码 "/>
                 <span class="glyphicon glyphicon-send form-control-feedback"></span>
             </div>
 
@@ -126,6 +140,7 @@ require_once '../lib/config.php';
                     $("#msg-error").hide(10);
                     $("#msg-error").show(100);
                     $("#msg-error-p").html("发生错误："+jqXHR.status);
+                    //alert(data.msg);
                     // 在控制台输出错误信息
                     console.log(removeHTMLTag(jqXHR.responseText));
                 }

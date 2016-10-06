@@ -21,10 +21,10 @@ $c = new \Ss\User\Invite();
         <div class="row">
             <div class="row marketing">
             	<center>
-                    <a href="https://bandwagonhost.com"><img src="asset/img/logo.png"></img></a>
-                    <a href="https://bandwagonhost.com/vps-hosting.php"><img src="asset/img/banner1.jpg" alt="Self-managed VPS hosting"/></a>
-                    <p>点我QQ详谈</p>
-                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1076351865&site=qq&menu=yes"><img src="asset/img/qq.png" alt="点我QQ详谈"/></a>
+                    <a href="https://bandwagonhost.com"><img src="http://img.ecfun.cc/logo.png?attname=&e=1475599254&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:QggE3VfipK-OUZ5a843ufigDelo"></img></a>
+                    <a href="https://bandwagonhost.com/vps-hosting.php"><img src="http://img.ecfun.cc/banner1.jpg?attname=&e=1475599241&token=DnaAnYC59MiINvUeZssSjfNq2_dPVnw9KQ82Tvyo:yXkt8YpWa0gfA-a4VoLWZVhYxaA" alt="Self-managed VPS hosting"/></a>
+                    <p>需要请留言</p>
+
 
 
 
