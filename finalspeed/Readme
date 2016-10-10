@@ -1,0 +1,22 @@
+rm -f install_fs.sh
+wget  https://soft.kuoruan.com/finalspeed/install_fs.sh
+chmod +x install_fs.sh
+./install_fs.sh 2>&1 | tee install.log
+
+
+	
+sh /fs/start.sh
+sh /fs/stop.sh
+sh /fs/restart.sh
+sh /fs/stop.sh ; rm -rf /fs
+tail -f /fs/server.log
+
+
+设置开机启动：
+
+chmod +x /etc/rc.local
+vi /etc/rc.local
+
+然后加入
+
+sh /fs/start.sh
